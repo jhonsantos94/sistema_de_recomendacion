@@ -1,4 +1,4 @@
-#  Sistema de Sistema de Recomendación
+#  Sistema de Recomendación
 
 # Programacion Web Avanzada - 14567
 
