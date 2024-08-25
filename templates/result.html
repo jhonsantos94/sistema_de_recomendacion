@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/result.css') }}" />
+
+</head>
+
+<body>
+    <div class="page">
+        <h1>Recomendaciones disponibles</h1>
+        {% for table in tables %}
+            <h2>{{ titles[loop.index] }}</h2>
+            {{ table|safe }}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
